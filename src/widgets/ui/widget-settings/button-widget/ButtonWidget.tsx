@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import { Observer, useLocalObservable } from "mobx-react-lite";
 
 import { Button, Input, Portal, SegmentedRadioGroup } from "@shared/components";
-import { AlignedSegmentIcon, WidgetSettingsHeader } from "@features/ui";
 import { ButtonWidgetStore } from "@widgets/store/widget-settings/ButtonWidgetStore";
 import {
   ButtonSize,
@@ -15,6 +14,7 @@ import {
 
 import "./button-widget.styles.scss";
 import { usePopover } from "@shared/hooks/use-popover";
+import { AlignedSegmentIcon, WidgetSettingsHeader } from "@features/ui/widget-settings";
 
 interface Props extends Partial<ButtonWidgetStore> {}
 
