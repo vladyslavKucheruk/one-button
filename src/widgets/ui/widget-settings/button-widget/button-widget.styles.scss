@@ -1,0 +1,80 @@
+@import "../../../../global.styles.scss";
+
+.settings {
+  border-radius: 8px;
+  position: absolute;
+  color: $text-dark;
+  top: 100%;
+  left: 0;
+  background-color: $white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 40px 140px 0px $shadow-dark;
+
+  .settings__item {
+    border-top: 1px solid $border-light;
+    padding: 14px 16px;
+  }
+}
+
+.horizontal-align-center {
+  display: flex;
+  justify-content: center;
+}
+.horizontal-align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.horizontal-align-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.vertical-align-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.vertical-align-bottom {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.vertical-align-top {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.button {
+  position: relative;
+  background: $primary-color;
+  padding: 16px 22px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+
+  &.size-L {
+    font-size: 18px;
+  }
+  &.size-M {
+    font-size: 14px;
+  }
+  &.size-S {
+    font-size: 12px;
+  }
+  &.size-XS {
+    font-size: 10px;
+  }
+  &.align-center {
+    text-align: center;
+  }
+  &.align-right {
+    text-align: right;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../../global.styles.scss";
+
+.widget_settings__container {
+  display: flex;
+  align-items: center;
+  padding: 13px 0 11px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.widget_settings__dots_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  transform: translateX(-50%);
+
+  & .dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: $background-light;
+  }
+}
+
+.widget_settings__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.widget_settings__close_icon {
+  position: absolute;
+  right: 24px;
+  cursor: pointer;
+}

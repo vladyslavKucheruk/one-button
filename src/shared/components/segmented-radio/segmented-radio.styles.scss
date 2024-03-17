@@ -1,0 +1,43 @@
+@import "../../../global.styles.scss";
+
+.segmented_radio_group__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.segmented_radio_group__label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: $text-dark;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.segmented_radio_group__options {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.segmented_radio_group__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20px;
+
+  &:hover {
+    background-color: $background-light;
+  }
+
+  &.selected {
+    background-color: $background-light;
+  }
+}
