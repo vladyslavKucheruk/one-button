@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# OnePage Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Usage
 
-Currently, two official plugins are available:
+[Project Preview](https://one-button-beta.vercel.app/) - One Page technical task
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Quick install
 
-## Expanding the ESLint configuration
+After you clone the repo, follow these instructions:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Install packages `yarn`
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+To run the project in development mode use the command below:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- `yarn dev`
+
+## Stack
+
+- React + Vite
+- Typescript
+- SCSS
+- MobX
+- Popper JS
